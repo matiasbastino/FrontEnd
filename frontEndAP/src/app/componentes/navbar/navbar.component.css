@@ -1,0 +1,42 @@
+#navbar {
+    background-color: rgb(48, 46, 46);
+}
+
+.logoAp {
+    width: 15%;
+    margin-left: 1rem;
+}
+
+.list-group {
+    --bs-body-bg: transparent;
+    --bs-border-width: transparent;
+}
+
+i.fa-brands.fa-linkedin-in, i.fa-brands.fa-behance, i.fa-brands.fa-github, i.fa-solid.fa-lock, i.fa-solid.fa-lock-open {
+    color: white
+}
+
+/* Behance */
+i.fa-brands.fa-behance.fa-1xl:hover{
+    color:#0057ff
+    }
+
+/* linkedin */
+i.fa-brands.fa-behance:hover{
+    color:#0057ff
+    }
+    
+/* github */
+    i.fa-brands.fa-github:hover{
+        color:#0057ff
+        }
+    
+/* candado cerrado */
+    i.i.fa-solid.fa-lock:hover{
+    color:#0057ff
+    }
+    
+/* candado abierto */
+    i.i.fa-solid.fa-lock-open:hover{
+        color:#0057ff
+        }
