@@ -1,40 +1,41 @@
 {
     "nombre": "Matias Ezequiel",
     "bastino": "Bastino",
-    "nivelMaximoDeEstudio": "Desarrollador Full Stack Junior"
-}
+    "nivelMaximoDeEstudio": "Desarrollador Full Stack Junior",
 
-"experiencias": [
-    {
-        "id": 1,
-        "logoEmpresa": ".../asset/",
-        "url": "http/",
-        "puesto": "Diseñador gráfico",
-        "inicio": "02-02-2013",
-        "fin": "",
-        "descripcion": ""
-    },
 
-    {
-        "id": 2,
-        "logoEmpresa": ".../asset/",
-        "url": "http/",
-        "puesto": "Diseñador gráfico",
-        "inicio": "02-02-2013",
-        "fin": "",
-        "descripcion": ""
-    },
-]
+"experiencias":[
+                    {
+                        "id": 1,
+                        "logoEmpresa": ".../asset/",
+                        "url": "http/",
+                        "empresa": "Jefatura de Gabinete de Ministros",
+                        "puesto": "Diseñador gráfico",
+                        "inicio": "02-02-2013",
+                        "fin": "01-07-2022",
+                        "descripcion": "exper1"
+                    },
+                    {
+                        "id": 2,
+                        "logoEmpresa": ".../asset/",
+                        "url": "http/",
+                        "empresa": "Instituto Hábitat",
+                        "puesto": "Diseñador gráfico",
+                        "inicio": "02-02-2013",
+                        "fin": "",
+                        "descripcion": "exper2"
+                    }
+],
 
 "educacion": [
-    {
-        "id": 1,
-        "titulo": "Diseñador de Imagen y Sonido",
-        "institucion": "Facultad de Arquitectura, Diseño y Urbanismo (UBA)",
-        "inicio": "01-04-2006",
-        "fin": "01-07-2013",
-        "descripcion": ""
-    },
+                {
+                "id": 1,
+                "titulo": "Diseñador de Imagen y Sonido",
+                "institucion": "Facultad de Arquitectura, Diseño y Urbanismo (UBA)",
+                "inicio": "01-04-2006",
+                "fin": "01-07-2013",
+                "descripcion": ""
+                },
 
     {
         "id": 2,
@@ -43,5 +44,7 @@
         "inicio": "01-04-2020",
         "fin": "01-07-2021",
         "descripcion": ""
-    },
+    }
 ]
+
+}
