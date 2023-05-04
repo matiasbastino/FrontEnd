@@ -1,0 +1,47 @@
+{
+    "nombre": "Matias Ezequiel",
+    "bastino": "Bastino",
+    "nivelMaximoDeEstudio": "Desarrollador Full Stack Junior"
+}
+
+"experiencias": [
+    {
+        "id": 1,
+        "logoEmpresa": ".../asset/",
+        "url": "http/",
+        "puesto": "Diseñador gráfico",
+        "inicio": "02-02-2013",
+        "fin": "",
+        "descripcion": ""
+    },
+
+    {
+        "id": 2,
+        "logoEmpresa": ".../asset/",
+        "url": "http/",
+        "puesto": "Diseñador gráfico",
+        "inicio": "02-02-2013",
+        "fin": "",
+        "descripcion": ""
+    },
+]
+
+"educacion": [
+    {
+        "id": 1,
+        "titulo": "Diseñador de Imagen y Sonido",
+        "institucion": "Facultad de Arquitectura, Diseño y Urbanismo (UBA)",
+        "inicio": "01-04-2006",
+        "fin": "01-07-2013",
+        "descripcion": ""
+    },
+
+    {
+        "id": 2,
+        "titulo": "Magister en Diseño Interactivo",
+        "institucion": "Facultad de Arquitectura, Diseño y Urbanismo (UBA)",
+        "inicio": "01-04-2020",
+        "fin": "01-07-2021",
+        "descripcion": ""
+    },
+]
