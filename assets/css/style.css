@@ -1,0 +1,15 @@
+body {
+    background-color: rgba(179, 168, 168, 0.137);
+}
+
+.imgPerfil {
+    border-radius: 100%;
+}
+
+#navbar {
+    background-color: rgb(48, 46, 46);
+}
+
+.logoAp {
+    width: 20%;
+}
