@@ -1,39 +1,15 @@
 
-<div class="container mt-2">
-    <h4>Experiencia laboral</h4> 
+<div class="container mt-2" id="seccion">
+    <h4 class="titulosSecciones">Experiencia laboral</h4> 
     <div class="row align-items-start" *ngFor="let exper of experiencia">
       <div class="col-3 text text-center">
-        <img src="assets/img/Foto 4x4.jpg" alt="">
+        <img [src]="exper.logoEmpresa" alt="">
       </div>
       <div class="col-9">
-        <h3>{{exper.empresa}}</h3>
-        <h5>2011-Actualidad</h5>
+        <h6>{{exper.empresa}}</h6>
+        <h3>{{exper.puesto}}</h3>
+        <h6>{{exper.inicio}} - {{exper.fin}}</h6>
         <p>{{exper.descripcion}}</p>
-      </div>
-    </div>
-
-    <div class="row align-items-start">
-        <div class="col-3 text text-center">
-          <img src="assets/img/Foto 4x4.jpg" alt="">
-        </div>
-        <div class="col-9">
-          <h3>Instituto Hábitat</h3>
-          <h5>2017-Actualidad</h5>
-          <p>Diseño editorial de libros y cuadernillos.
-            Producción de contenidos, comunicación institucional y edición de piezas audiovisuales para el canal de Youtube del Instituto de la Espacialidad Humana.</p>
         </div>
     </div>
-
-    <div class="row align-items-start">
-        <div class="col-3 text text-center">
-          <img src="assets/img/Foto 4x4.jpg" alt="">
-        </div>
-        <div class="col-9">
-          <h3>Fundación Soberania Sanitaria</h3>
-          <h5>2017-Actualidad</h5>
-          <p>Diseño editorial de libros y cuadernillos.
-            Producción de contenidos, comunicación institucional y edición de piezas audiovisuales para el canal de Youtube del Instituto de la Espacialidad Humana.</p>
-        </div>
-    </div>
-
   </div>

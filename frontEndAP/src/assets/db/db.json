@@ -1,49 +1,54 @@
 {
-    "nombre": "Matias Ezequiel",
-    "bastino": "Bastino",
-    "nivelMaximoDeEstudio": "Desarrollador Full Stack Junior",
-
+    "datosPersonales":[
+        {
+        "nombre": "Matias Ezequiel",
+        "apellido": "Bastino",
+        "nivelMaximoDeEstudio": "Desarrollador Full Stack Junior"
+         }
+    ],
 
 "experiencias":[
                     {
                         "id": 1,
-                        "logoEmpresa": ".../asset/",
-                        "url": "http/",
+                        "logoEmpresa": "../assets/img/JGM-01.png",
+                        "url": "https://www.argentina.gob.ar/noticias/se-presento-la-memoria-detallada-del-estado-de-la-nacion-2022",
                         "empresa": "Jefatura de Gabinete de Ministros",
                         "puesto": "Diseñador gráfico",
-                        "inicio": "02-02-2013",
-                        "fin": "01-07-2022",
-                        "descripcion": "exper1"
+                        "inicio": "01-06-2011",
+                        "fin": "Actualidad",
+                        "descripcion": "Durante los últimos tres años, estuve a cargo de desarrollar la maquetación y estética de la Memoria del estado de la Nación. Definimos una paleta cromática basada en los colores institucionales para usar cada uno de los años de la gestión 2019-2023."
                     },
                     {
                         "id": 2,
-                        "logoEmpresa": ".../asset/",
-                        "url": "http/",
+                        "logoEmpresa": "../assets/img/UBA.png",
+                        "url": "https://www.youtube.com/@ieh.ubafadu",
                         "empresa": "Instituto Hábitat",
-                        "puesto": "Diseñador gráfico",
-                        "inicio": "02-02-2013",
-                        "fin": "",
-                        "descripcion": "exper2"
+                        "puesto": "Realizador audiovisual",
+                        "inicio": "01-04-2017",
+                        "fin": "Actualidad",
+                        "descripcion": "Producción de contenidos, comunicación institucional y edición de piezas audiovisuales para el canal de Youtube del Instituto de la Espacialidad Humana."
                     }
 ],
 
 "educacion": [
-                {
-                "id": 1,
-                "titulo": "Diseñador de Imagen y Sonido",
-                "institucion": "Facultad de Arquitectura, Diseño y Urbanismo (UBA)",
-                "inicio": "01-04-2006",
-                "fin": "01-07-2013",
-                "descripcion": ""
-                },
-
     {
-        "id": 2,
+        "id": 1,
         "titulo": "Magister en Diseño Interactivo",
+        "logoInstitucion": "../assets/img/MAEDI.png",
         "institucion": "Facultad de Arquitectura, Diseño y Urbanismo (UBA)",
         "inicio": "01-04-2020",
         "fin": "01-07-2021",
         "descripcion": ""
+    },
+
+    {
+     "id": 2,
+    "titulo": "Diseñador de Imagen y Sonido",
+    "logoInstitucion": "../assets/img/UBA3.png",
+    "institucion": "Facultad de Arquitectura, Diseño y Urbanismo (UBA)",
+    "inicio": "01-04-2006",
+    "fin": "01-07-2013",
+    "descripcion": ""
     }
 ]
 

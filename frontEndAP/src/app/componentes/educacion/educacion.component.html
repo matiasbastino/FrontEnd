@@ -1,1 +1,14 @@
-<p>educacion works!</p>
+<div class="container mt-2" id="seccion">
+    <h4 class="titulosSecciones">Educación</h4> 
+    <div class="row align-items-start" *ngFor="let edu of educa">
+      <div class="col-3 text text-center">
+        <img [src]="edu.logoInstitucion" alt="">
+      </div>
+      <div class="col-9">
+        <h6>{{edu.institucion}}</h6>
+        <h3>{{edu.titulo}}</h3>
+        <h6>{{edu.inicio}} - {{edu.fin}}</h6>
+        <p>{{edu.descripcion}}</p>
+        </div>
+    </div>
+  </div>
