@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, ɵNgNoValidate } from '@angular/forms';
+import { FormBuilder, ɵNgNoValidate, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,23 @@ import { FormBuilder, ɵNgNoValidate } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   loginForm=this.formBuilder.group ({
-    email: ['ejemplo@mail.com'],
-    contraseña: [''],
+    email: ['ejemplo@mail.com',[Validators.required, Validators.email]],
+    contraseña: ['', Validators.required],
   })
 
-  constructor (private formBuilder:FormBuilder) {}
+  constructor (private formBuilder:FormBuilder, private router:Router) {}
 
     ngOnInit(): void {
   }
 
-}
+  login() {
+    if(this.loginForm.valid){
+      console.log("Llamar al servicio de login");
+      this.router.navigateByUrl('/educación');
+      this.loginForm.reset();
+    }
+      else {
+        alert("Error al ingresar los datos")
+      }
+    }
+  }

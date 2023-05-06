@@ -6,8 +6,10 @@ import { LoginComponent } from './componentes/login/login.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 
 const routes: Routes = [
-  { path: 'porfolio', component: IndexComponent },
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: 'inicio', component: IndexComponent },
   { path: 'iniciarSesion', component: LoginComponent },
+  { path: 'educacion', component: EducacionComponent },
   { path: '**', component: Pagina404Component }
 ];
 
