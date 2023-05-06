@@ -13,6 +13,8 @@ import { Pagina404Component } from './componentes/pagina404/pagina404.component'
 import { IndexComponent } from './componentes/index/index.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,16 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
     Pagina404Component,
     IndexComponent,
     SkillsComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    FormsModule
+      ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
