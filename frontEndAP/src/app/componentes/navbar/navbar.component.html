@@ -8,15 +8,16 @@
                     <li class="list-group-item"><a href="https://www.behance.net/matiasbastino" target="blanck"><i class="fa-brands fa-behance"></i></a></li>
                     <li class="list-group-item"><a href="https://github.com/matiasbastino" target="blanck"><i class="fa-brands fa-github"></i></a></li>
                 <!--Boton modal-->
-                    <button *ngIf="!userLoginOn" type="button" class="btn" routerLink="/iniciarSesion">
+                    <button *ngIf="!userLoginOn" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="fa-solid fa-lock"></i>
                     </button>             
-                    <button *ngIf="userLoginOn"type="button" class="btn" routerLink="/inicio">
+                    <button *ngIf="userLoginOn" type="button" class="btn" routerLink="/inicio">
                         <i class="fa-solid fa-lock-open"></i>
-                    </button>    
+                    </button>           
                 <!-- Fin boton Modal -->
             </ul>
         </div>
     </nav>
 </section>
+<app-login></app-login>
 
