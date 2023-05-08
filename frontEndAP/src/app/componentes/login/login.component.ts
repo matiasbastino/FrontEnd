@@ -11,6 +11,7 @@ import { LoginRequest } from 'src/app/servicios/auth/loginRequest';
 })
 
 export class LoginComponent implements OnInit {
+  loginError:string="";
   loginForm=this.formBuilder.group ({
     email: ['ejemplo@mail.com',[Validators.required, Validators.email]],
     password: ['', Validators.required],
@@ -33,9 +34,21 @@ export class LoginComponent implements OnInit {
 
   login() {
     if(this.loginForm.valid){
-      this.loginService.login(this.loginForm.value as LoginRequest);
-      this.router.navigateByUrl('/educacion');
+      this.loginService.login(this.loginForm.value as LoginRequest).subscribe({
+        next: (userData) => {
+          console.log(userData);
+        },
+        error: (errorData) => {
+          console.log(errorData);
+          this.loginError=errorData;
+        },
+        complete: () => {
+          console.info ("login completo");
+          this.router.navigateByUrl('/educacion');
       this.loginForm.reset();
+        }
+      });
+
     }
       else {
         this.loginForm.markAllAsTouched()
