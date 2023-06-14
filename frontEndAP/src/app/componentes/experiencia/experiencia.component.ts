@@ -1,21 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from 'src/app/servicios/datos.service';
-
+import { Experiencia } from 'src/app/model/experiencia';
+import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 @Component({
   selector: 'app-experiencia',
   templateUrl: './experiencia.component.html',
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
- //esto es para traer distintos datos
-  experiencia: any = [];
-  //otro dato siemple
-  //nombre : string = '';
-  constructor(private datos: DatosService) { }
+  experiencias: Experiencia[]=[];
 
+  constructor(private sExperiencia: ExperienciaService) {  }
   ngOnInit(): void {
-    this.datos.getDatos().subscribe(data => {
-      this.experiencia = data.experiencias;
-    }) 
+    this.cargarExperiencia();
+    //if(this.tokenService.getToken()){
+
+    //}
+    throw new Error('Method not implemented.');
   }
-}
+
+    cargarExperiencia(): void{
+      this.sExperiencia.lista().subscribe(data=> {this.experiencias=data});
+    }
+  }
+ 
