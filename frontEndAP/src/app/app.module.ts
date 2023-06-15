@@ -16,6 +16,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { LoginComponent } from './componentes/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { ModalExperienciaAddComponent } from './modales/modal-experiencia-add/modal-experiencia-add.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DashboardComponent } from './componentes/dashboard/dashboard.component'
     SkillsComponent,
     ProyectosComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ModalExperienciaAddComponent
   ],
   imports: [
     BrowserModule,
