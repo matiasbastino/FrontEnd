@@ -14,7 +14,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { LoginComponent } from './componentes/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './componentes/dashboard/dashboard.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
