@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona';
-import { PersonaService } from 'src/app/servicios/persona.service';
+import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
   selector: 'app-sobre-mi',
