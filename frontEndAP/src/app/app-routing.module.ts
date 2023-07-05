@@ -9,9 +9,7 @@ import { DashboardComponent } from './componentes/dashboard/dashboard.component'
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: IndexComponent },
-  { path: 'iniciarSesion', component: LoginComponent },
-  { path: 'educacion', component: EducacionComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  { path: 'iniciarsesion', component: LoginComponent },
   { path: '**', component: Pagina404Component }
 ];
 
