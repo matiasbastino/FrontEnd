@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/servicios/auth/login.service';
 
 @Component({
@@ -6,22 +7,14 @@ import { LoginService } from 'src/app/servicios/auth/login.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit, OnDestroy {
-userLoginOn:boolean=false;
-constructor(private loginService:LoginService){ }
-ngOnDestroy(): void {
-  this.loginService.currentUserLoginOn.unsubscribe();
-}
+export class NavbarComponent implements OnInit {
+
+constructor(private router:Router){ }
 
 ngOnInit(): void {
-  this.loginService.currentUserLoginOn.subscribe(
-    {
-    next:(userLoginOn) => {
-      this.userLoginOn=userLoginOn;
     }
+
+login(){
+this.router.navigate(['login'])
   }
-
-    )
-}
-
 }
